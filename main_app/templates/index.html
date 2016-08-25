@@ -5,7 +5,9 @@
 </head>
 <body>
   <h1>TreasureGram</h1>
-  <p>{{ treasure_name }}</p>
-  <p>{{ treasure_val }}</p>
+  {% for treasure in treasures %}
+    <p>{{ treasure.name }}</p>
+    <p>{{ treasure.val }}</p>
+  {% endfor %}
 </body>
 </html>
